@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="archor" prefHeight="455.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <AnchorPane fx:id="archor_evo_c" layoutX="190.0" layoutY="80.0" prefHeight="314.0" prefWidth="494.0" style="-fx-background-color: #fff; -fx-border-color: #000;">
+         <children>
+            <Button alignment="CENTER" cancelButton="true" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="476.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleClose1" prefHeight="10.0" prefWidth="20.0" style="-fx-background-color: #1BB2B600;" text="X" textFill="#d13030">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Pane layoutX="1.0" layoutY="23.0" prefHeight="47.0" prefWidth="496.0" style="-fx-background-color: #7156dd;">
+               <children>
+                  <Text fill="#189fb7" layoutX="150.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COLLAGE EVALUATION">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text layoutX="41.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ability to present content" />
+            <Text layoutX="41.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Professor's level of knowledge" />
+            <Text layoutX="41.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="on time presence" />
+            <Text layoutX="41.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Holding classes regularly" />
+            <Text layoutX="39.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correct assessment of students" />
+            <Text fx:id="avc_1" layoutX="239.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="avc_2" layoutX="238.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="avc_3" layoutX="238.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="avc_4" layoutX="239.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="avc_5" layoutX="239.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="avc_t" layoutX="239.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Separator layoutX="87.0" layoutY="253.0" prefWidth="200.0" />
+            <Text layoutX="41.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="total" />
+            <Text layoutX="302.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="best professor" />
+            <Text layoutX="302.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="count of professor" />
+            <Text fx:id="best_professor" layoutX="425.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Text fx:id="count_professor" layoutX="425.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="archor_add_l" layoutX="255.0" layoutY="33.0" prefHeight="283.0" prefWidth="311.0" style="-fx-background-color: #fff; -fx-border-color: #000;">
+         <children>
+            <TextField fx:id="name_l" layoutX="126.0" layoutY="55.0" />
+            <TextField fx:id="lessonUnit_l" layoutX="126.0" layoutY="99.0" />
+            <Label layoutX="55.0" layoutY="59.0" text="name" />
+            <Label fx:id="lessonUnit_text" layoutX="52.0" layoutY="103.0" text="LessonUnit" />
+            <Pane layoutX="1.0" prefHeight="47.0" prefWidth="311.0" style="-fx-background-color: #14626e;">
+               <children>
+                  <Text fill="#189fb7" layoutX="100.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD LESSON">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button alignment="CENTER" cancelButton="true" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="287.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleClose1" prefHeight="10.0" prefWidth="20.0" style="-fx-background-color: #1BB2B600;" text="X" textFill="#d13030">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <Button layoutX="134.0" layoutY="243.0" mnemonicParsing="false" onAction="#doAdd_l" style="-fx-background-color: #1b718c;" text="ADD" textFill="#28abd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="error_l" fill="#b11313" layoutX="81.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="149.5999999999999">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="lab" layoutX="201.0" layoutY="142.0" mnemonicParsing="false" onAction="#lab" text="lessonLab">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </CheckBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="archor_evo_p" layoutX="180.0" layoutY="70.0" prefHeight="314.0" prefWidth="494.0" style="-fx-background-color: #fff; -fx-border-color: #000;">
+         <children>
+            <Button alignment="CENTER" cancelButton="true" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="476.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleClose1" prefHeight="10.0" prefWidth="20.0" style="-fx-background-color: #1BB2B600;" text="X" textFill="#d13030">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Pane layoutX="1.0" layoutY="23.0" prefHeight="47.0" prefWidth="496.0" style="-fx-background-color: #7156dd;">
+               <children>
+                  <Text fill="#189fb7" layoutX="139.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROFESSOR EVALUATION">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text layoutX="41.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ability to present content" />
+            <Text layoutX="41.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Professor's level of knowledge" />
+            <Text layoutX="41.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="on time presence" />
+            <Text layoutX="41.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Holding classes regularly" />
+            <Text layoutX="39.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correct assessment of students" />
+            <Text fx:id="av_1" layoutX="239.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="av_2" layoutX="238.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="av_3" layoutX="238.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="av_4" layoutX="239.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="av_5" layoutX="239.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="av_t" layoutX="239.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Separator layoutX="87.0" layoutY="253.0" prefWidth="200.0" />
+            <Text layoutX="41.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="total" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="archor_evo" layoutX="170.0" layoutY="60.0" prefHeight="314.0" prefWidth="494.0" style="-fx-background-color: #fff; -fx-border-color: #000;">
+         <children>
+            <Button alignment="CENTER" cancelButton="true" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="476.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleClose1" prefHeight="10.0" prefWidth="20.0" style="-fx-background-color: #1BB2B600;" text="X" textFill="#d13030">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Pane layoutX="1.0" layoutY="23.0" prefHeight="47.0" prefWidth="496.0" style="-fx-background-color: #7156dd;">
+               <children>
+                  <Text fill="#189fb7" layoutX="148.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT EVAULATION">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button fx:id="save_evo" layoutX="444.0" layoutY="274.0" mnemonicParsing="false" onAction="#save_evo" text="Save">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Slider fx:id="slider_1" blockIncrement="1.0" layoutX="233.0" layoutY="91.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Slider>
+            <Text layoutX="41.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ability to present content" />
+            <Text layoutX="41.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Professor's level of knowledge" />
+            <Text layoutX="41.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="on time presence" />
+            <Text layoutX="41.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Holding classes regularly" />
+            <Text layoutX="39.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correct assessment of students" />
+            <Slider fx:id="slider_2" blockIncrement="1.0" layoutX="233.0" layoutY="124.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Slider>
+            <Slider fx:id="slider_3" blockIncrement="1.0" layoutX="233.0" layoutY="159.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Slider>
+            <Slider fx:id="slider_4" blockIncrement="1.0" layoutX="233.0" layoutY="190.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Slider>
+            <Slider fx:id="slider_5" blockIncrement="1.0" layoutX="233.0" layoutY="222.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Slider>
+            <ChoiceBox fx:id="lesson_evo" layoutX="324.0" layoutY="273.0" prefHeight="26.0" prefWidth="111.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ChoiceBox>
+            <Label fx:id="professor_evo" layoutX="39.0" layoutY="278.0" text="professor name" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="archor_add_c" layoutX="275.0" layoutY="53.0" prefHeight="283.0" prefWidth="311.0" style="-fx-background-color: #fff; -fx-border-color: #000;">
+         <children>
+            <TextField fx:id="name_c" layoutX="126.0" layoutY="55.0" />
+            <Label layoutX="55.0" layoutY="59.0" text="name" />
+            <Pane layoutX="1.0" prefHeight="47.0" prefWidth="311.0" style="-fx-background-color: #14626e;">
+               <children>
+                  <Text fill="#189fb7" layoutX="94.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD COLLAGE">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button alignment="CENTER" cancelButton="true" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="287.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleClose1" prefHeight="10.0" prefWidth="20.0" style="-fx-background-color: #1BB2B600;" text="X" textFill="#d13030">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <Button layoutX="134.0" layoutY="243.0" mnemonicParsing="false" onAction="#doAdd_c" style="-fx-background-color: #1b718c;" text="ADD" textFill="#28abd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="error_c" fill="#b11313" layoutX="81.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="149.5999999999999">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="archor_add_p" layoutX="245.0" layoutY="23.0" prefHeight="283.0" prefWidth="311.0" style="-fx-background-color: #fff; -fx-border-color: #000;">
+         <children>
+            <TextField fx:id="name_p" layoutX="126.0" layoutY="55.0" />
+            <TextField fx:id="lastname_p" layoutX="126.0" layoutY="100.0" />
+            <TextField fx:id="numterm_p" layoutX="126.0" layoutY="144.0" />
+            <TextField fx:id="status_p" layoutX="126.0" layoutY="187.0" />
+            <Label layoutX="55.0" layoutY="59.0" text="name" />
+            <Label layoutX="55.0" layoutY="104.0" text="lastname" />
+            <Label layoutX="55.0" layoutY="148.0" text="numterm" />
+            <Label layoutX="54.0" layoutY="191.0" text="status" />
+            <Pane layoutX="1.0" prefHeight="47.0" prefWidth="311.0" style="-fx-background-color: #14626e;">
+               <children>
+                  <Text fill="#189fb7" layoutX="83.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD PROFESSOR">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button alignment="CENTER" cancelButton="true" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="287.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleClose1" prefHeight="10.0" prefWidth="20.0" style="-fx-background-color: #1BB2B600;" text="X" textFill="#d13030">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <Button layoutX="134.0" layoutY="243.0" mnemonicParsing="false" onAction="#doAdd_p" style="-fx-background-color: #1b718c;" text="ADD" textFill="#28abd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="error_p" fill="#b11313" layoutX="81.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="149.5999999999999">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="archor_list" layoutX="245.0" layoutY="20.0" prefHeight="330.0" prefWidth="370.0" style="-fx-background-color: #fff; -fx-border-color: #000;">
+         <children>
+            <ListView fx:id="list_show" layoutX="1.0" layoutY="28.0" prefHeight="247.0" prefWidth="370.0" />
+            <Button fx:id="list_add" layoutX="301.0" layoutY="289.0" mnemonicParsing="false" onAction="#add_list" prefHeight="26.0" prefWidth="58.0" stylesheets="@../css/main.css" text="add" textFill="#c7c7c7">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ChoiceBox fx:id="list_choice" layoutX="145.0" layoutY="290.0" prefWidth="150.0" />
+            <Button alignment="CENTER" cancelButton="true" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="350.0" mnemonicParsing="false" onAction="#handleClose1" prefHeight="10.0" prefWidth="20.0" style="-fx-background-color: #1BB2B600;" text="X" textFill="#d13030">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ChoiceBox fx:id="list_professor" layoutX="42.0" layoutY="289.0" prefHeight="26.0" prefWidth="94.0" />
+         </children>
+      </AnchorPane>
+      <VBox prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: #3F2B63;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="54.0" prefWidth="150.0">
+               <children>
+                  <Label layoutX="31.0" layoutY="14.0" text="GOLESTAN" textFill="#c4c4c4">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btnProfessor" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="150.0" stylesheets="@../css/main.css" text="PROFESSOR" textFill="#d4c7c7">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnStudent" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="150.0" stylesheets="@../css/main.css" text="STUDENTS" textFill="#d4c7c7">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnLesson" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="150.0" stylesheets="@../css/main.css" text="LESSONS" textFill="#d4c7c7">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnCollage" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleClicks" prefHeight="39.0" prefWidth="150.0" stylesheets="@../css/main.css" text="COLLAGE" textFill="#d4c7c7">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <StackPane layoutX="165.0" layoutY="110.0" style="-fx-background-color: #fff;">
+         <children>
+            <GridPane fx:id="GPlesson" prefHeight="330.0" prefWidth="574.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="346.7999862670898" minHeight="6.800006103515614" prefHeight="45.59999389648438" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="346.7999862670898" minHeight="10.0" prefHeight="285.6000061035156" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TableView fx:id="lesson_table" fixedCellSize="0.0" prefHeight="283.0" prefWidth="599.0" GridPane.rowIndex="1">
+                     <columns>
+                        <TableColumn fx:id="Lid" prefWidth="40.0" style="-fx-background-color: #7156DDFF;" text="ID" />
+                        <TableColumn fx:id="Lname" prefWidth="124.79998779296875" style="-fx-background-color: #7156DDFF;" text="Nmae" />
+                        <TableColumn fx:id="Llessonunit" prefWidth="152.800048828125" style="-fx-background-color: #7156DDFF;" text="LessonUnit" />
+                        <TableColumn fx:id="Lcollage" prefWidth="96.80001831054688" style="-fx-background-color: #7156DDFF;" text="Collage" />
+                        <TableColumn fx:id="Lprofessor" prefWidth="94.4000244140625" style="-fx-background-color: #7156DDFF;" text="Professor" />
+                        <TableColumn fx:id="Ldel" prefWidth="67.199951171875" style="-fx-background-color: #7156DDFF;" text="Del" />
+                     </columns>
+                  </TableView>
+                  <Group>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#search_l" stylesheets="@../css/main.css" text="search" textFill="#bcbcbc">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="search_l" layoutX="56.0" layoutY="1.0" prefHeight="26.0" prefWidth="159.0" />
+                        <Button fx:id="addlesson" layoutX="483.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="25.0" prefWidth="90.0" stylesheets="@../css/main.css" text="add lesson" textFill="#c4c4c4">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button layoutX="423.0" mnemonicParsing="false" onAction="#delete_l" style="-fx-background-color: #910c0c;" text="delete" textFill="#d4afaf">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Group>
+               </children>
+            </GridPane>
+            <GridPane fx:id="GPstudent" prefHeight="330.0" prefWidth="574.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="346.7999862670898" minHeight="6.800006103515614" prefHeight="45.59999389648438" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="346.7999862670898" minHeight="10.0" prefHeight="285.6000061035156" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TableView fx:id="student_table" fixedCellSize="0.0" prefHeight="283.0" prefWidth="599.0" GridPane.rowIndex="1">
+                     <columns>
+                        <TableColumn fx:id="Sid" prefWidth="40.0" style="-fx-background-color: #7156DDFF;" text="ID" />
+                        <TableColumn fx:id="Sname" prefWidth="118.39996337890625" style="-fx-background-color: #7156DDFF;" text="Name" />
+                        <TableColumn fx:id="Slastname" prefWidth="150.4000244140625" style="-fx-background-color: #7156DDFF;" text="LastNmae" />
+                        <TableColumn fx:id="Slesson" prefWidth="128.79995727539062" style="-fx-background-color: #7156DDFF;" text="Lessons" />
+                        <TableColumn fx:id="Sevaluation" prefWidth="87.199951171875" style="-fx-background-color: #7156DDFF;" text="Evaluation" />
+                        <TableColumn fx:id="Sdel" prefWidth="47.99997558593748" style="-fx-background-color: #7156DDFF;" text="Del" />
+                     </columns>
+                  </TableView>
+                  <Group>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#search_s" stylesheets="@../css/main.css" text="search" textFill="#bcbcbc">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <TextField fx:id="search_s" layoutX="56.0" layoutY="1.0" prefHeight="26.0" prefWidth="159.0" />
+                        <Button fx:id="addstudent" layoutX="483.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="25.0" prefWidth="90.0" stylesheets="@../css/main.css" text="add student" textFill="#c4c4c4">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button layoutX="423.0" mnemonicParsing="false" onAction="#delete_s" style="-fx-background-color: #910c0c;" text="delete" textFill="#d4afaf">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Group>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </GridPane>
+            <GridPane fx:id="GPcollage" prefHeight="330.0" prefWidth="574.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="346.7999862670898" minHeight="6.800006103515614" prefHeight="45.59999389648438" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="346.7999862670898" minHeight="10.0" prefHeight="285.6000061035156" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TableView fx:id="collage_table" fixedCellSize="0.0" prefHeight="283.0" prefWidth="599.0" GridPane.rowIndex="1">
+                     <columns>
+                        <TableColumn fx:id="Cid" prefWidth="40.0" style="-fx-background-color: #7156DDFF;" text="ID" />
+                        <TableColumn fx:id="Cname" prefWidth="100.79998779296875" style="-fx-background-color: #7156DDFF;" text="Name" />
+                        <TableColumn fx:id="Cprofessor" prefWidth="106.4000244140625" style="-fx-background-color: #7156DDFF;" text="Professor" />
+                        <TableColumn fx:id="Clesson" minWidth="0.0" prefWidth="112.80001831054688" style="-fx-background-color: #7156DDFF;" text="Lesson" />
+                        <TableColumn fx:id="Cstudent" prefWidth="84.0" style="-fx-background-color: #7156DDFF;" text="Student" />
+                        <TableColumn fx:id="Cdetail" minWidth="0.0" prefWidth="79.20001220703125" style="-fx-background-color: #7156DDFF;" text="Detail" />
+                        <TableColumn fx:id="Cdel" prefWidth="52.0" style="-fx-background-color: #7156DDFF;" text="Del" />
+                     </columns>
+                  </TableView>
+                  <Group>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#search_c" stylesheets="@../css/main.css" text="search" textFill="#bcbcbc">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="search_c" layoutX="56.0" layoutY="1.0" prefHeight="26.0" prefWidth="159.0" />
+                        <Button fx:id="addcollage" layoutX="483.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="25.0" prefWidth="88.0" stylesheets="@../css/main.css" text="add collage" textFill="#c4c4c4">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button layoutX="423.0" mnemonicParsing="false" onAction="#delete_c" style="-fx-background-color: #910c0c;" text="delete" textFill="#d4afaf">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Group>
+               </children>
+            </GridPane>
+            <GridPane fx:id="GPprofessor" prefHeight="330.0" prefWidth="574.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="346.7999862670898" minHeight="6.800006103515614" prefHeight="45.59999389648438" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="346.7999862670898" minHeight="10.0" prefHeight="285.6000061035156" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TableView fx:id="professor_table" fixedCellSize="0.0" prefHeight="283.0" prefWidth="599.0" GridPane.rowIndex="1">
+                    <columns>
+                        <TableColumn fx:id="Pid" prefWidth="49.5999755859375" style="-fx-background-color: #7156DDFF;" text="ID" />
+                      <TableColumn fx:id="Pname" prefWidth="88.79997253417969" style="-fx-background-color: #7156DDFF;" text="Nmae" />
+                        <TableColumn fx:id="Plastname" prefWidth="90.4000244140625" style="-fx-background-color: #7156DDFF;" text="LastName" />
+                        <TableColumn fx:id="Plesson" prefWidth="69.5999755859375" style="-fx-background-color: #7156DDFF;" text="Lessons" />
+                        <TableColumn fx:id="Pnumterm" prefWidth="70.4000244140625" style="-fx-background-color: #7156DDFF;" text="TermNum" />
+                        <TableColumn fx:id="Pstatus" prefWidth="68.0" style="-fx-background-color: #7156DDFF;" text="Status" />
+                        <TableColumn fx:id="Pgrade" prefWidth="72.7999267578125" style="-fx-background-color: #7156DDFF;" text="Grade" />
+                        <TableColumn fx:id="Pdel" prefWidth="63.2000732421875" style="-fx-background-color: #7156DDFF;" text="Del" />
+                    </columns>
+                  </TableView>
+                  <Group>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#search_p" stylesheets="@../css/main.css" text="search" textFill="#bcbcbc">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <TextField fx:id="search_p" layoutX="56.0" layoutY="1.0" prefHeight="26.0" prefWidth="159.0" />
+                        <Button fx:id="addprofessor" layoutX="483.0" mnemonicParsing="false" onAction="#handleAdd" stylesheets="@../css/main.css" text="add professor" textFill="#c4c4c4">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button layoutX="423.0" mnemonicParsing="false" onAction="#delete_p" style="-fx-background-color: #910c0c;" text="delete" textFill="#d4afaf">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Group>
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+      <Pane fx:id="pnlStatus" layoutX="150.0" layoutY="42.0" prefHeight="62.0" prefWidth="604.0" style="-fx-background-color: #7156dd;">
+         <children>
+            <Label fx:id="btnStatus" layoutX="51.0" layoutY="18.0" text="PROFESSOR" textFill="#c4c4c4">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="btnExit" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="735.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="10.0" prefWidth="20.0" style="-fx-background-color: #1BB2B600;" text="X" textFill="#d13030">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane fx:id="archor_add_s" layoutX="265.0" layoutY="43.0" prefHeight="283.0" prefWidth="311.0" style="-fx-background-color: #fff; -fx-border-color: #000;">
+         <children>
+            <TextField fx:id="name_s" layoutX="126.0" layoutY="55.0" />
+            <TextField fx:id="lastname_s" layoutX="126.0" layoutY="99.0" />
+            <Label layoutX="55.0" layoutY="59.0" text="name" />
+            <Label layoutX="52.0" layoutY="103.0" text="lastName" />
+            <Pane layoutX="1.0" prefHeight="47.0" prefWidth="311.0" style="-fx-background-color: #14626e;">
+               <children>
+                  <Text fill="#189fb7" layoutX="93.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD STUDENT">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button alignment="CENTER" cancelButton="true" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="287.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleClose1" prefHeight="10.0" prefWidth="20.0" style="-fx-background-color: #1BB2B600;" text="X" textFill="#d13030">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <Button layoutX="134.0" layoutY="243.0" mnemonicParsing="false" onAction="#doAdd_s" style="-fx-background-color: #1b718c;" text="ADD" textFill="#28abd7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="error_s" fill="#b11313" layoutX="81.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="149.5999999999999">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+            <Label layoutX="50.0" layoutY="142.0" text="collage" />
+            <ChoiceBox fx:id="collage_s" layoutX="126.0" layoutY="138.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
